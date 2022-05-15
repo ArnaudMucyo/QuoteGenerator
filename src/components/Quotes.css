@@ -1,0 +1,137 @@
+
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    font-family: Poppins;
+}
+
+.quote_card{
+    background: #5584AC;
+    min-height: 300px;
+    max-height: 450px;
+    min-width: 600px;
+    max-width: 700px;
+    border-radius: 10px;
+    margin: auto;
+    margin-top: 100px;
+    overflow: hidden;
+    box-shadow: 0px 0px 20px 5px #1A132F;
+}
+
+.quote_container{
+    background: #5584AC;
+    width: 500px;
+    min-height: 100px;
+    display: block;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+    box-shadow: 0px 0px 8px #22577E;
+    border-radius: 8px;
+    margin: auto;
+
+}
+
+p{
+    color: #1A132F;
+    padding: 20px 100px;
+    margin-top: 50px;
+    word-wrap: break-word;
+    transition: 1s all ease;
+    align-items: center;
+    justify-content: center;
+}
+
+p:hover{
+    transform: scale(1.1);
+    transition: 1s all ease;
+
+}
+
+h4{
+    padding: 10px 100px;
+    text-align: center;
+    color: #E2D784;
+    margin-top: 10px;
+    display: none;
+    transition: all 1s ease;
+    animation: delay;
+    animation-delay: 2s;
+    animation-timing-function: ease;
+}
+
+@keyframes delay {
+    0%{
+        transition: all 0.2s ease;
+        opacity: 0.4;
+    }
+    50%{
+        transition: all 0.2s ease;
+        opacity: 0.8;
+    }
+    100%{
+        transition: all 0.2s ease;
+        opacity: 1;
+    }
+}
+
+
+
+h1{
+
+    padding: 20px 100px;
+    color: #E2D784;
+}
+
+h1:hover{
+    transition: 1s all ease;
+    transform: scale(1.1);
+
+
+}
+
+h2 {
+    width: 100%;
+    background: #8FBDD3;
+    text-align: center;
+    height: 60px;
+    padding: 10px;
+    font-size: 30px;
+    color: #1A132F;
+
+}
+
+.button_space{
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+    margin-left: 10px;
+}
+
+.button_design{
+    display: flex;
+    margin-left: 10px;
+    background: #E2D784;
+    height: 30px;
+    align-items: center;
+    font-family: Poppins;
+    width: 100px;
+    justify-content: center;
+    border: 2px solid #E2D784;
+    border-radius: 5px;
+    color: #1A132F;
+    cursor: pointer;
+    font-size: 15px;
+    transition: 0.3s all ease;
+}
+
+.button_design:hover{
+    box-shadow: 3px 3px  #1A132F;
+    transition: 0.3s all ease;
+
+}
