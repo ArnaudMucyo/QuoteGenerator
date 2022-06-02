@@ -22,19 +22,19 @@ body{
     box-shadow: 0px 0px 20px 5px #1A132F;
 }
 
-.quote_container{
-    background: #5584AC;
-    width: 500px;
-    min-height: 100px;
-    display: block;
-    justify-content: center;
-    align-items: center;
-    height: 100%;
-    box-shadow: 0px 0px 8px #22577E;
-    border-radius: 8px;
-    margin: auto;
+/*.quote_container{*/
+/*    background: #5584AC;*/
+/*    width: 500px;*/
+/*    min-height: 100px;*/
+/*    display: block;*/
+/*    justify-content: center;*/
+/*    align-items: center;*/
+/*    height: 100%;*/
+/*    box-shadow: 0px 0px 8px #22577E;*/
+/*    border-radius: 8px;*/
+/*    margin: auto;*/
 
-}
+/*}*/
 
 p{
     color: #1A132F;
@@ -47,7 +47,8 @@ p{
 }
 
 p:hover{
-    transform: scale(1.1);
+
+    transform: translateY(10px);
     transition: 1s all ease;
 
 }
@@ -85,11 +86,12 @@ h1{
 
     padding: 20px 100px;
     color: #E2D784;
+    transition: 1s all ease;
 }
 
 h1:hover{
     transition: 1s all ease;
-    transform: scale(1.1);
+    transform:translateX(120px);
 
 
 }
@@ -133,5 +135,21 @@ h2 {
 .button_design:hover{
     box-shadow: 3px 3px  #1A132F;
     transition: 0.3s all ease;
+    font-weight: 1000;
 
 }
+
+.icon-heart{
+    font-size: 25px;
+    color: #E2D784;
+    transform:translateX(195px);
+    cursor: pointer;
+    transition: all 0.8s ease;
+
+}
+
+.heart-container{
+    transform: translateX(110px);
+    position: fixed;
+}
+

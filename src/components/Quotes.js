@@ -1,15 +1,17 @@
 import React, {useEffect, useState} from "react";
 import {CopyToClipboard} from "react-copy-to-clipboard";
-
-
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
+import { faHeart } from '@fortawesome/free-solid-svg-icons'
 import './Quotes.css'
 import AllQuotes from '../Quotes/quotes.txt'
+
 
 const Quotes = () => {
 
     const [quotes,setQuotes] = useState('');
     const [quoteValue,setQuoteValue] = useState('');
     const [copied,setCopied] = useState(false);
+    const [like,setLike] = useState(false);
 
 
 
@@ -39,6 +41,15 @@ const Quotes = () => {
         getQuote()
     },[]);
 
+    const iconHandler = () => {
+        if (like){
+            setLike(false);
+        }
+        else{
+            setLike(true);
+        }
+    }
+
 
 
 
@@ -62,8 +73,17 @@ const Quotes = () => {
                                 onClick={() => setQuoteValue(quotes.text.value)}
                                 type="button">Copy Quote</button>
                     </CopyToClipboard>
+                    <div className="heart-container">
+                        <FontAwesomeIcon icon={faHeart} className="icon-heart" onClick={iconHandler} style={{color : like ? "#22577E" : "#E2D784",fontSize : like ? null: "30px"}}/>
+                    </div>
+
+
 
                 </div>
+
+
+
+
 
             </div>
 
