@@ -32,9 +32,7 @@ p{
     margin-top: 50px;
     word-wrap: break-word;
     transition: 1s all ease;
-    align-items: center;
-    justify-content: center;
-    text-align: center;
+
 }
 
 p:hover{
@@ -147,5 +145,38 @@ h2 {
 .heart-container{
     transform: translateX(110px);
     position: fixed;
+}
+
+@media(max-width: 764px){
+    .quote_card {
+        min-height: 200px;
+        max-height: 550px;
+        min-width: 400px;
+        max-width: 500px;
+        border-bottom:2px solid #22577E ;
+    }
+
+    p{
+        margin-top: 40px;
+        font-size: 15px;
+    }
+
+    h1{
+        font-size: 20px;
+    }
+
+    h2{
+        font-size: 40px;
+    }
+
+    h4{
+        margin-top: 30px;
+    }
+
+    .icon-heart{
+        transform: translateX(60px);
+        font-size: 20px;
+    }
+
 }
 

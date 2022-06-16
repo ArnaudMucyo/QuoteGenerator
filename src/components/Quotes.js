@@ -58,7 +58,7 @@ const Quotes = () => {
         <div>
             <div className="quote_card">
                 <h2>QUOTE GENERATOR</h2>
-                {copied ? <h4 style={{display: "block"}}>Copied!</h4> : null}
+                {copied ? <h4 style={{display: "block",transition:"all 0.8s"}}>Copied!</h4> : null}
                 <div className="quote_container">
                     <p>{quotes.text}</p>
                 </div>
@@ -74,7 +74,7 @@ const Quotes = () => {
                                 type="button">Copy Quote</button>
                     </CopyToClipboard>
                     <div className="heart-container">
-                        <FontAwesomeIcon icon={faHeart} className="icon-heart" onClick={iconHandler} style={{color : like ? "#68A7AD" : "#E2D784",fontSize : like ? null: "30px"}}/>
+                        <FontAwesomeIcon icon={faHeart} className="icon-heart" onClick={iconHandler} style={{color : like ? "#68A7AD" : "#E2D784",fontSize : like ? null: "22px"}}/>
                     </div>
 
 
