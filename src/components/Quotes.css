@@ -149,6 +149,7 @@ h2 {
 
 @media(max-width: 764px){
     .quote_card {
+        margin-top: 90px;
         min-height: 200px;
         max-height: 550px;
         min-width: 400px;
