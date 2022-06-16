@@ -10,40 +10,31 @@ body{
 }
 
 .quote_card{
-    background: #5584AC;
+    background: #112B3C;
     min-height: 300px;
     max-height: 450px;
     min-width: 600px;
     max-width: 700px;
-    border-radius: 10px;
+    border-radius: 2px;
     margin: auto;
-    margin-top: 100px;
+    margin-top: 200px;
     overflow: hidden;
-    box-shadow: 0px 0px 20px 5px #1A132F;
+    border-bottom: 2px solid #22577E;
+    padding-bottom: 10px;
+    /*border-right: 4px solid #22577E;*/
+
 }
 
-/*.quote_container{*/
-/*    background: #5584AC;*/
-/*    width: 500px;*/
-/*    min-height: 100px;*/
-/*    display: block;*/
-/*    justify-content: center;*/
-/*    align-items: center;*/
-/*    height: 100%;*/
-/*    box-shadow: 0px 0px 8px #22577E;*/
-/*    border-radius: 8px;*/
-/*    margin: auto;*/
-
-/*}*/
 
 p{
-    color: #1A132F;
+    color: #79DAE8;
     padding: 20px 100px;
     margin-top: 50px;
     word-wrap: break-word;
     transition: 1s all ease;
     align-items: center;
     justify-content: center;
+    text-align: center;
 }
 
 p:hover{
@@ -85,25 +76,27 @@ h4{
 h1{
 
     padding: 20px 100px;
-    color: #E2D784;
+    color: #EFEFEF;
     transition: 1s all ease;
+    text-align: center;
 }
 
 h1:hover{
     transition: 1s all ease;
-    transform:translateX(120px);
+    transform:translateX(10px);
 
 
 }
 
 h2 {
     width: 100%;
-    background: #8FBDD3;
+    background: #112B3C;
     text-align: center;
-    height: 60px;
+    height: 100px;
     padding: 10px;
-    font-size: 30px;
-    color: #1A132F;
+    font-size: 60px;
+    color: #FFFBE7;
+
 
 }
 
@@ -118,13 +111,13 @@ h2 {
 .button_design{
     display: flex;
     margin-left: 10px;
-    background: #E2D784;
-    height: 30px;
+    background: #68A7AD;
+    height: 45px;
     align-items: center;
     font-family: Poppins;
-    width: 100px;
+    width: 120px;
     justify-content: center;
-    border: 2px solid #E2D784;
+    border: 2px solid #68A7AD;
     border-radius: 5px;
     color: #1A132F;
     cursor: pointer;
@@ -133,15 +126,18 @@ h2 {
 }
 
 .button_design:hover{
-    box-shadow: 3px 3px  #1A132F;
+    box-shadow: 0px 0px 8px  #68A7AD;
     transition: 0.3s all ease;
-    font-weight: 1000;
+    font-weight: 700;
+    /*transform: translateY(-2px);*/
+    color: #EFEFEF;
+
 
 }
 
 .icon-heart{
     font-size: 25px;
-    color: #E2D784;
+    color: #68A7AD;
     transform:translateX(195px);
     cursor: pointer;
     transition: all 0.8s ease;

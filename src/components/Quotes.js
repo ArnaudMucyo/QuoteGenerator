@@ -11,7 +11,7 @@ const Quotes = () => {
     const [quotes,setQuotes] = useState('');
     const [quoteValue,setQuoteValue] = useState('');
     const [copied,setCopied] = useState(false);
-    const [like,setLike] = useState(false);
+    const [like,setLike] = useState(true);
 
 
 
@@ -33,7 +33,7 @@ const Quotes = () => {
         setCopied(true);
         setTimeout(function () {
             setCopied(false);
-        },2000);
+        },2500);
     }
 
 
@@ -67,14 +67,14 @@ const Quotes = () => {
 
 
                 <div className="button_space">
-                    <button className="button_design" onClick={getQuote}  type="button">Get Quote</button>
+                    <button className="button_design" onClick={getQuote}  type="button">Next Quote</button>
                     <CopyToClipboard onCopy={copyTextHandler} text={quotes.text}>
                         <button className="button_design"
                                 onClick={() => setQuoteValue(quotes.text.value)}
                                 type="button">Copy Quote</button>
                     </CopyToClipboard>
                     <div className="heart-container">
-                        <FontAwesomeIcon icon={faHeart} className="icon-heart" onClick={iconHandler} style={{color : like ? "#22577E" : "#E2D784",fontSize : like ? null: "30px"}}/>
+                        <FontAwesomeIcon icon={faHeart} className="icon-heart" onClick={iconHandler} style={{color : like ? "#68A7AD" : "#E2D784",fontSize : like ? null: "30px"}}/>
                     </div>
 
 
